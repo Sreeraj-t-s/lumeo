@@ -1,0 +1,123 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  height:100vh;
+}
+
+/* LAYOUT */
+.container{
+  display:flex;
+  height:100%;
+}
+
+/* LEFT SIDE (FORM NOW) */
+.left{
+  width:48%;
+  background:#000;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* RIGHT SIDE (IMAGE NOW) */
+.right{
+  flex:1;
+  background: url('signup img.jpg') no-repeat center;
+  background-size: cover;
+  position:relative;
+  filter: grayscale(10%);
+}
+
+/* OVERLAY */
+.overlay{
+  position:absolute;
+  width:10%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.overlay h1{
+  color:#fff;
+  font-size:60px;
+  letter-spacing:2px;
+}
+
+/* FORM */
+.form-box{
+  width:70%;
+  height: 90%;
+  color:#fff;
+}
+
+.form-box h2{
+  margin-bottom:8px;
+  font-size:15px;
+  color:#fff;
+}
+
+.desc{
+  font-size:9px;
+  color:#aaa;
+  margin-bottom:15px;
+}
+
+/* INPUTS */
+.input-box{
+  margin-bottom:10px;
+}
+
+.input-box input{
+  width:80%;
+  border-radius:15px;
+  padding:8px;
+  background:transparent;
+  border:1px solid #444;
+  color:#fff;
+  outline:none;
+  font-size:11px;
+
+}
+
+.input-box input:focus{
+  border-color:#6C5CE7;
+}
+
+/* BUTTON */
+
+button{
+  width:55%;
+  border-radius:15px;
+  padding:6px;
+  background:transparent;
+  border:1px solid #888;
+  color:#fff;
+  transition:0.3s;
+  font-size:10px;
+}
+
+button:hover{
+  border-color:#6C5CE7;
+  background-color:#6C5CE7;
+}
+
+/* SIGN IN LINK */
+.signup{
+  font-size:9px;
+  margin:10px 0 20px;
+  color:#fff;
+
+}
+
+.signup a{
+  color:#6C5CE7;
+  text-decoration:none;
+}
+
+

@@ -1,0 +1,128 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:#05070d;
+  color:#fff;
+  overflow-y:auto;
+
+
+  background: 
+    /* linear-gradient(rgba(5,7,13,0.85), rgba(5,7,13,0.95)), overlay */
+    url('upload img.jpg') no-repeat center/cover;
+}
+
+/* MAIN CONTAINER */
+.upload-page{
+  width:100%;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start; 
+  padding:80px 60px;
+}
+
+/* GLASS CARD */
+.upload-box{
+  width:100%;
+  max-width:350px;
+  padding:25px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
+  text-align:center;
+  box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+
+/* TITLE */
+.upload-box h1{
+  margin-bottom:10px;
+  font-size:26px;
+  background:linear-gradient(45deg,#6c5ce7,#00d4ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.upload-box p{
+  color:#c0bcbc;
+  margin-bottom:20px;
+  font-size:14px;
+}
+
+/* DROP AREA */
+.drop-area{
+  border:2px dashed #9f0685;
+  border-radius:15px;
+  padding:20px; 
+  margin-bottom:20px;
+  transition:0.3s;
+}
+.drop-area .file{
+  font-size: 10px;
+}
+
+.drop-area:hover{
+  background:rgba(108,92,231,0.1);
+  box-shadow:0 0 25px #9f0685;
+}
+
+.drop-area input{
+  margin-top:10px;
+  color:#fff;
+}
+
+/* FORM */
+.form input,
+.form textarea,
+.form select{
+  width:100%;
+  margin-bottom:12px;
+  padding:10px;
+  border-radius:10px;
+  border:none;
+  outline:none;
+  background:#111827;
+  color:#fff;
+  font-size:14px;
+}
+
+.form textarea{
+  height:80px; 
+  resize:none;
+}
+
+/* BUTTON */
+.publish{
+  width:100%;
+  padding:10px;
+  border:none;
+  border-radius:20px;
+  background:linear-gradient(45deg,#6c5ce7,#00d4ff);
+  color:#fff;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.publish:hover{
+  box-shadow:0 0 15px #6c5ce7;
+}
+
+/* 📱 MOBILE OPTIMIZATION */
+@media (max-width:500px){
+  .upload-box{
+    padding:20px;
+  }
+
+  .upload-box h1{
+    font-size:22px;
+  }
+
+  .form textarea{
+    height:70px;
+  }
+}

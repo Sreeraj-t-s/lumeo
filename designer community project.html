@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DesignVerse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/429a18313f.js" crossorigin="anonymous"></script>
+
+  
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">Lumeo</div>
+
+    <div class="search">
+      <input type="text" placeholder="Search designs...">
+    </div>
+
+    <div class="icons">
+      <div class="iconnss">Start Free Trial</div>
+      <div class="icon"><a href="upload.html" style="text-decoration: none;color:white;">upload</a></div>
+      <div class="icon"><a href="signin.html" style="text-decoration: none;color: white;">Sign In</a></div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Explore Creative Designs</h1>
+    <p>Discover, share and get inspired by top designers</p>
+  </div>
+
+  <!-- FILTERS -->
+  <div class="filters">
+   <button class="filter-btn">All</button>
+   <button class="filter-btn">UI Design</button>
+   <button class="filter-btn">UX Case Study</button>
+   <button class="filter-btn">Web Design</button>
+   <button class="filter-btn">Mobile App</button>
+   <button class="filter-btn">Dashboard</button>
+   <button class="filter-btn">Branding</button>
+   <button class="filter-btn">Illustration</button>
+   <button class="filter-btn">Typography</button>
+   <button class="filter-btn">Animation</button>
+   <button class="filter-btn">3D Design</button>
+  </div>
+
+  <!-- GRID -->
+  <div class="grid">
+
+    <div class="card">
+  <img src="fitness img.jpg">
+
+  <div class="card-content">
+    <h3>Fitness App UI</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">120</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div class="card">
+  <img src="travel img.jpg">
+
+  <div class="card-content">
+    <h3>Travel Website</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">155</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="card">
+  <img src="dashboard img.webp">
+
+  <div class="card-content">
+    <h3>Dashboard UI</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">302</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="card">
+  <img src="mobile banking app.png">
+
+  <div class="card-content">
+    <h3>Mobile Banking App</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">420</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<div class="card">
+  <img src="food.jpg">
+
+  <div class="card-content">
+    <h3>Food Delivery App</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">190</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<div class="card">
+  <img src="clothing website.png">
+
+  <div class="card-content">
+    <h3>Clothing Website</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">600</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div class="card">
+  <img src="multiple owner 1.png">
+
+  <div class="card-content">
+    <h3>Multiple Owners</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">430</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<div class="card">
+  <img src="multiple owner 2.png">
+
+  <div class="card-content">
+    <h3>Multiple Owners</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">580</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div class="card">
+  <img src="multiple owners 3.jpg">
+
+  <div class="card-content">
+    <h3>Multiple Owners</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">740</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div class="card">
+  <img src="multiple owner 4.jpg">
+
+  <div class="card-content">
+    <h3>Multiple Owners</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">360</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<div class="card">
+  <img src="multiple owner 5.jpg">
+
+  <div class="card-content">
+    <h3>Multiple Owners</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">580</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+<div class="card">
+  <img src="multiple owner 6.jpg">
+
+  <div class="card-content">
+    <h3>Multiple Owners</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">463</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+<div class="card">
+  <img src="multiple owner 7.jpg">
+
+  <div class="card-content">
+    <h3>Multiple Owners</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">473</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<div class="card">
+  <img src="multiple owner 8.jpg">
+
+  <div class="card-content">
+    <h3>Multiple Owners</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">749</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+<div class="card">
+  <img src="multiple owner 9.avif">
+
+  <div class="card-content">
+    <h3>Multiple Owners</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">639</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="card">
+  <img src="multiple owner 10.jpg">
+
+  <div class="card-content">
+    <h3>Multiple Owners</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">389</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="card">
+  <img src="multiple owner 11.jpg">
+
+  <div class="card-content">
+    <h3>Multiple Owners</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">667</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+  <img src="multiple owner 12.jpg">
+
+  <div class="card-content">
+    <h3>Multiple Owners</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">874</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="card">
+  <img src="multiple owner 13.jpg">
+
+  <div class="card-content">
+    <h3>Multiple Owners</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">756</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+  <img src="multiple owner 14.png">
+
+  <div class="card-content">
+    <h3>Multiple Owners</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">467</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+  <img src="multiple owner 15.jpg">
+
+  <div class="card-content">
+    <h3>Multiple Owners</h3>
+    <p>by Alex</p>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <span class="like" onclick="toggleLike(this)">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span class="count">857</span>
+      </span>
+
+      <span class="save" onclick="toggleSave(this)">
+        <i class="fa-regular fa-bookmark"></i>
+      </span>
+    </div>
+
+    <!-- COMMENTS -->
+    <div class="comment-section">
+      <input type="text" placeholder="Add a comment..." class="comment-input">
+      <button onclick="addComment(this)">Post</button>
+      <div class="comments"></div>
+    </div>
+
+  </div>
+</div>
+
+
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+
+
+<!-- login -->
+
+
+
+<div class="center">
+  <div class="container">
+
+    <h2>Log in or sign up to view more projects</h2>
+
+    <button class="social-btn"><span><i class="fa-brands fa-chrome" style="color: rgb(242, 244, 247);"></i></span> Continue with Google</button>
+    <button class="social-btn"><span><i class="fa-brands fa-facebook" style="color: rgb(242, 244, 247);"></i></span> Continue with Facebook</button>
+    <button class="social-btn"><span><i class="fa-brands fa-apple" style="color: rgb(242, 244, 247);"></i></span> Continue with Apple</button>
+
+    <div class="view-more">View more</div>
+
+    <div class="divider"><span>Or</span></div>
+
+    <div class="email-section">
+      <h3>Continue with email</h3>
+
+      <label>Email address</label>
+      <br>
+      <input type="email" placeholder="Enter your email">
+
+      <button class="btn">Continue</button>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- footer -->
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Logo -->
+    <div class="logoo">Lumeo</div>
+
+    <!-- Column 1 -->
+    <div>
+      <h4>Built For Creatives</h4>
+      <ul>
+        <li>Try Lumeo Pro</li>
+        <li>Find Inspiration</li>
+        <li>Get Hired</li>
+        <li>Sell Creative Assets</li>
+        <li>Sell Freelance Services</li>
+      </ul>
+    </div>
+
+    <!-- Column 2 -->
+    <div>
+      <h4>Find Talent</h4>
+      <ul>
+        <li>Post a Job</li>
+        <li>Graphic Designers</li>
+        <li>Photographers</li>
+        <li>Video Editors</li>
+        <li>Web Designers</li>
+        <li>Illustrators</li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div>
+      <h4>Lumeo</h4>
+      <ul>
+        <li>About Lumeo</li>
+        <li>Adobe Portfolio</li>
+        <li>Download the App</li>
+        <li>Blog</li>
+        <li>Careers</li>
+        <li>Help Center</li>
+        <li>Contact Us</li>
+        <li>Popular Search Terms</li>
+        <li>Login</li>
+      </ul>
+    </div>
+
+    <!-- Column 4 -->
+    <div>
+      <h4>Social</h4>
+      <ul class="social">
+        <li><span class="iconn"><i class="fa-brands fa-instagram" style="color: rgb(242, 244, 247);"></i></span> Instagram</li>
+        <li><span class="iconn"><i class="fa-brands fa-twitter" style="color: rgb(242, 244, 247);"></i></span> Twitter</li>
+        <li><span class="iconn"><i class="fa-brands fa-pinterest" style="color: rgb(242, 244, 247);"></i></span> Pinterest</li>
+        <li><span class="iconn"><i class="fa-brands fa-facebook" style="color: rgb(242, 244, 247);"></i></span> Facebook</li>
+        <li><span class="iconn"><i class="fa-brands fa-linkedin" style="color: rgb(242, 244, 247);"></i></span> LinkedIn</li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+
+
+<!-- footer 2 -->
+
+
+<footer class="adobe-footer">
+  <div class="footer-inner">
+
+    <!-- Top Line -->
+    <div class="footer-top">
+      <div class="left">
+        <div class="logo">
+          <span class="logo-mark">A</span>
+          <span class="logo-text">Adobe</span>
+        </div>
+        <span class="copyright">
+          © 2026 Adobe Inc. All rights reserved.
+        </span>
+      </div>
+    </div>
+
+    <!-- Bottom Row -->
+    <div class="footer-bottom">
+      <div class="language">
+        <span class="globe">🌐</span>
+        English
+        <span class="arrow">▼</span>
+      </div>
+
+      <div class="links">
+        <a href="#">TOU</a>
+        <a href="#">Privacy</a>
+        <a href="#">Community</a>
+        <a href="#">Cookie preferences</a>
+        <a href="#">Do not sell or share my personal information</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+  
+
+
+
+<script src="script.js"></script>
+  
+</body>
+</html>
+
+
